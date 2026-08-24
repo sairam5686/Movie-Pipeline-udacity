@@ -21,7 +21,7 @@ jobs:
           cache: 'npm'
           cache-dependency-path: 'starter/frontend/package-lock.json'
 
-      - name: Perform a cache action to restore cache before dependency install
+      - name: Cache Validation
         uses: actions/cache@v3
         with:
           path: ~/.npm
@@ -33,7 +33,7 @@ jobs:
         working-directory: starter/frontend
         run: npm ci
 
-      - name: Run the npm run lint command
+      - name: Run lint
         working-directory: starter/frontend
         run: npm run lint
 
@@ -50,7 +50,7 @@ jobs:
           cache: 'npm'
           cache-dependency-path: 'starter/frontend/package-lock.json'
 
-      - name: Perform a cache action to restore cache before dependency install
+      - name: Cache Validation
         uses: actions/cache@v3
         with:
           path: ~/.npm
@@ -62,7 +62,7 @@ jobs:
         working-directory: starter/frontend
         run: npm ci
 
-      - name: Run the npm run test command
+      - name: Run test
         working-directory: starter/frontend
         run: CI=true npm test
 
@@ -80,7 +80,7 @@ jobs:
           cache: 'npm'
           cache-dependency-path: 'starter/frontend/package-lock.json'
 
-      - name: Perform a cache action to restore cache before dependency install
+      - name: Cache Validation
         uses: actions/cache@v3
         with:
           path: ~/.npm
@@ -92,11 +92,11 @@ jobs:
         working-directory: starter/frontend
         run: npm ci
 
-      - name: Run the npm run test command
+      - name: Run test
         working-directory: starter/frontend
         run: CI=true npm test
 
-      - name: Build application using docker
+      - name: Build Docker image
         working-directory: starter/frontend
         run: |
           docker build \
