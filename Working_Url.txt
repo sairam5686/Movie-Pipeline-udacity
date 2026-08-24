@@ -1,7 +1,3 @@
-===================================================================
-MOVIE PICTURE PIPELINE - UDACITY SUBMISSION LINKS & PROJECT INFO
-===================================================================
-
 1. GITHUB REPOSITORY URL:
 https://github.com/sairam5686/Movie-Pipeline-udacity
 
