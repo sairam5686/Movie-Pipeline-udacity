@@ -18,8 +18,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18'
+          cache: 'npm'
+          cache-dependency-path: 'starter/frontend/package-lock.json'
 
-      - name: Cache dependencies
+      - name: Perform a cache action to restore cache before dependency install
         uses: actions/cache@v3
         with:
           path: ~/.npm
@@ -31,7 +33,7 @@ jobs:
         working-directory: starter/frontend
         run: npm ci
 
-      - name: Run lint
+      - name: Run the npm run lint command
         working-directory: starter/frontend
         run: npm run lint
 
@@ -45,8 +47,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18'
+          cache: 'npm'
+          cache-dependency-path: 'starter/frontend/package-lock.json'
 
-      - name: Cache dependencies
+      - name: Perform a cache action to restore cache before dependency install
         uses: actions/cache@v3
         with:
           path: ~/.npm
@@ -58,7 +62,7 @@ jobs:
         working-directory: starter/frontend
         run: npm ci
 
-      - name: Run test
+      - name: Run the npm run test command
         working-directory: starter/frontend
         run: CI=true npm test
 
@@ -73,8 +77,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18'
+          cache: 'npm'
+          cache-dependency-path: 'starter/frontend/package-lock.json'
 
-      - name: Cache dependencies
+      - name: Perform a cache action to restore cache before dependency install
         uses: actions/cache@v3
         with:
           path: ~/.npm
@@ -86,11 +92,11 @@ jobs:
         working-directory: starter/frontend
         run: npm ci
 
-      - name: Run test
+      - name: Run the npm run test command
         working-directory: starter/frontend
         run: CI=true npm test
 
-      - name: Build Docker image
+      - name: Build application using docker
         working-directory: starter/frontend
         run: |
           docker build \

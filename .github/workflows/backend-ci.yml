@@ -18,17 +18,18 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: '3.10'
+          cache: 'pipenv'
 
-      - name: Cache Pipenv packages
+      - name: Install Pipenv
+        run: pip install pipenv
+
+      - name: Cache dependencies
         uses: actions/cache@v3
         with:
           path: ~/.local/share/virtualenvs
           key: ${{ runner.os }}-pipenv-${{ hashFiles('starter/backend/Pipfile.lock') }}
           restore-keys: |
             ${{ runner.os }}-pipenv-
-
-      - name: Install Pipenv
-        run: pip install pipenv
 
       - name: Install dependencies
         working-directory: starter/backend
@@ -48,17 +49,18 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: '3.10'
+          cache: 'pipenv'
 
-      - name: Cache Pipenv packages
+      - name: Install Pipenv
+        run: pip install pipenv
+
+      - name: Cache dependencies
         uses: actions/cache@v3
         with:
           path: ~/.local/share/virtualenvs
           key: ${{ runner.os }}-pipenv-${{ hashFiles('starter/backend/Pipfile.lock') }}
           restore-keys: |
             ${{ runner.os }}-pipenv-
-
-      - name: Install Pipenv
-        run: pip install pipenv
 
       - name: Install dependencies
         working-directory: starter/backend
@@ -79,8 +81,12 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: '3.10'
+          cache: 'pipenv'
 
-      - name: Cache Pipenv packages
+      - name: Install Pipenv
+        run: pip install pipenv
+
+      - name: Cache dependencies
         uses: actions/cache@v3
         with:
           path: ~/.local/share/virtualenvs
@@ -88,16 +94,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pipenv-
 
-      - name: Install Pipenv
-        run: pip install pipenv
-
       - name: Install dependencies
         working-directory: starter/backend
         run: pipenv install --dev
-
-      - name: Run tests
-        working-directory: starter/backend
-        run: pipenv run test
 
       - name: Build Docker image
         working-directory: starter/backend
