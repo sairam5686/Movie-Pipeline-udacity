@@ -11,14 +11,13 @@ RUN apk update && \
   gcc \
   linux-headers \
   openssl \
-  libffi-dev \
-  && pip install pipenv
+  libffi-dev
 
 RUN mkdir -p /var/www/app && mkdir /app
 
 COPY Pipfile* /app
-RUN cd /app && pipenv install --system
+RUN pip install flask uwsgi flask-cors pytest
 
 COPY . /app
 
-CMD uwsgi --http :5000 --master --enable-threads -s /var/www/app/app.sock --manage-script-name --mount /=app:app
+CMD ["uwsgi", "--http", ":5000", "--master", "--enable-threads", "-s", "/var/www/app/app.sock", "--manage-script-name", "--mount", "/=app:app"]
