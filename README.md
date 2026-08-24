@@ -1,5 +1,18 @@
-# Movie Picture Pipeline
+## Working Url
 
+# Frontend: 
+http://a666f19b8cadb4be1bc1bc52ca087c0b-538605473.us-east-1.elb.amazonaws.com/
+
+# Backend
+http://a13bd289cce3a4f6abdf2c3bb7e84930-1743752707.us-east-1.elb.amazonaws.com/movies
+
+
+
+
+
+
+
+# Movie Picture Pipeline
 You've been brought on as the DevOps resource for a development team that manages a web application that is a catalog of Movie Picture movies. They're in dire need of automating their development workflows in hopes of accelerating their release cycle. They'd like to use Github Actions to automate testing, building and deploying their applications to an existing Kubernetes cluster.
 
 The team's project is comprised of 2 applications.
@@ -469,5 +482,6 @@ kustomize build | kubectl apply -f -
 ## License
 
 [License](LICENSE.md)
-#   M o v i e - P i p e l i n e - u d a c i t y  
+#   M o v i e - P i p e l i n e - u d a c i t y 
+ 
  
