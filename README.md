@@ -1,18 +1,20 @@
-## Working Url
+# Movie Picture Pipeline - Project Submission Links
 
-# Frontend: 
-http://a666f19b8cadb4be1bc1bc52ca087c0b-538605473.us-east-1.elb.amazonaws.com/
+### 🔗 GitHub Repository URL:
+https://github.com/sairam5686/Movie-Pipeline-udacity
 
-# Backend
-http://a13bd289cce3a4f6abdf2c3bb7e84930-1743752707.us-east-1.elb.amazonaws.com/movies
+### ⚡ GitHub Actions Workflow Links:
+- **Actions Main Tab**: https://github.com/sairam5686/Movie-Pipeline-udacity/actions
+- **Frontend CI**: https://github.com/sairam5686/Movie-Pipeline-udacity/actions/workflows/frontend-ci.yaml
+- **Frontend CD**: https://github.com/sairam5686/Movie-Pipeline-udacity/actions/workflows/frontend-cd.yml
+- **Backend CI**: https://github.com/sairam5686/Movie-Pipeline-udacity/actions/workflows/backend-ci.yml
+- **Backend CD**: https://github.com/sairam5686/Movie-Pipeline-udacity/actions/workflows/backend-cd.yml
 
+### 🌐 Deployed Application Live URLs:
+- **Frontend UI (Movie Catalog)**: http://a666f19b8cadb4be1bc1bc52ca087c0b-538605473.us-east-1.elb.amazonaws.com/
+- **Backend API (`/movies` JSON)**: http://a13bd289cce3a4f6abdf2c3bb7e84930-1743752707.us-east-1.elb.amazonaws.com/movies
 
-
-
-
-
-
-# Movie Picture Pipeline
+---# Movie Picture Pipeline
 You've been brought on as the DevOps resource for a development team that manages a web application that is a catalog of Movie Picture movies. They're in dire need of automating their development workflows in hopes of accelerating their release cycle. They'd like to use Github Actions to automate testing, building and deploying their applications to an existing Kubernetes cluster.
 
 The team's project is comprised of 2 applications.

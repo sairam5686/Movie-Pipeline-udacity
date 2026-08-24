@@ -1,5 +1,17 @@
-frontend Url:
-http://a666f19b8cadb4be1bc1bc52ca087c0b-538605473.us-east-1.elb.amazonaws.com/
+===================================================================
+MOVIE PICTURE PIPELINE - UDACITY SUBMISSION LINKS & PROJECT INFO
+===================================================================
 
-Backend URL :
-http://a13bd289cce3a4f6abdf2c3bb7e84930-1743752707.us-east-1.elb.amazonaws.com/movies
+1. GITHUB REPOSITORY URL:
+https://github.com/sairam5686/Movie-Pipeline-udacity
+
+2. GITHUB ACTIONS WORKFLOW RUN LINKS:
+- Actions Main Tab: https://github.com/sairam5686/Movie-Pipeline-udacity/actions
+- Frontend CI Workflow: https://github.com/sairam5686/Movie-Pipeline-udacity/actions/workflows/frontend-ci.yaml
+- Frontend CD Workflow: https://github.com/sairam5686/Movie-Pipeline-udacity/actions/workflows/frontend-cd.yml
+- Backend CI Workflow: https://github.com/sairam5686/Movie-Pipeline-udacity/actions/workflows/backend-ci.yml
+- Backend CD Workflow: https://github.com/sairam5686/Movie-Pipeline-udacity/actions/workflows/backend-cd.yml
+
+3. DEPLOYED APPLICATION LIVE ENDPOINT URLS:
+- Frontend UI Movie Catalog: http://a666f19b8cadb4be1bc1bc52ca087c0b-538605473.us-east-1.elb.amazonaws.com/
+- Backend JSON Movies API Endpoint: http://a13bd289cce3a4f6abdf2c3bb7e84930-1743752707.us-east-1.elb.amazonaws.com/movies
