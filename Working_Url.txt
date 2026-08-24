@@ -1,0 +1,5 @@
+frontend Url:
+http://a666f19b8cadb4be1bc1bc52ca087c0b-538605473.us-east-1.elb.amazonaws.com/
+
+Backend URL :
+http://a13bd289cce3a4f6abdf2c3bb7e84930-1743752707.us-east-1.elb.amazonaws.com/movies
