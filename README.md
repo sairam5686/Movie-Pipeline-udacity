@@ -11,8 +11,8 @@ https://github.com/sairam5686/Movie-Pipeline-udacity
 - **Backend CD**: https://github.com/sairam5686/Movie-Pipeline-udacity/actions/workflows/backend-cd.yml
 
 ### 🌐 Deployed Application Live URLs:
-- **Frontend UI (Movie Catalog)**: http://a666f19b8cadb4be1bc1bc52ca087c0b-538605473.us-east-1.elb.amazonaws.com/
-- **Backend API (`/movies` JSON)**: http://a13bd289cce3a4f6abdf2c3bb7e84930-1743752707.us-east-1.elb.amazonaws.com/movies
+- **Frontend UI (Movie Catalog)**: http://a44094922cb2148fab4e29a418009461-2046256045.us-east-1.elb.amazonaws.com/
+- **Backend API (`/movies` JSON)**: http://a2011b6cc4fb946c5be25b754cc52bd9-1040388010.us-east-1.elb.amazonaws.com/movies
 
 ---# Movie Picture Pipeline
 You've been brought on as the DevOps resource for a development team that manages a web application that is a catalog of Movie Picture movies. They're in dire need of automating their development workflows in hopes of accelerating their release cycle. They'd like to use Github Actions to automate testing, building and deploying their applications to an existing Kubernetes cluster.
