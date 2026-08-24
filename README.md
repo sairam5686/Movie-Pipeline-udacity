@@ -1,16 +1,16 @@
 # Movie Picture Pipeline - Project Submission Links
 
-### 🔗 GitHub Repository URL:
+### GitHub Repository URL:
 https://github.com/sairam5686/Movie-Pipeline-udacity
 
-### ⚡ GitHub Actions Workflow Links:
+###  GitHub Actions Workflow Links:
 - **Actions Main Tab**: https://github.com/sairam5686/Movie-Pipeline-udacity/actions
 - **Frontend CI**: https://github.com/sairam5686/Movie-Pipeline-udacity/actions/workflows/frontend-ci.yaml
 - **Frontend CD**: https://github.com/sairam5686/Movie-Pipeline-udacity/actions/workflows/frontend-cd.yml
 - **Backend CI**: https://github.com/sairam5686/Movie-Pipeline-udacity/actions/workflows/backend-ci.yml
 - **Backend CD**: https://github.com/sairam5686/Movie-Pipeline-udacity/actions/workflows/backend-cd.yml
 
-### 🌐 Deployed Application Live URLs:
+### Deployed Application Live URLs:
 - **Frontend UI (Movie Catalog)**: http://a44094922cb2148fab4e29a418009461-2046256045.us-east-1.elb.amazonaws.com/
 - **Backend API (`/movies` JSON)**: http://a2011b6cc4fb946c5be25b754cc52bd9-1040388010.us-east-1.elb.amazonaws.com/movies
 
@@ -65,7 +65,7 @@ You'll find 2 folders, one named `frontend` and one named `backend`, where each 
       2. The tag applied to the image should be the git SHA of the commit that triggered the build
 
 
-**⚠️ NOTE**
+** NOTE**
 Once you begin work on Continuous Deployment, you'll need to first setup the AWS and Kubernetes environment. Follow [these instructions ](#setting-up-continuous-deployment-environment) only when you're ready to start testing your deployments.
 
 ## One-time setup instructions
